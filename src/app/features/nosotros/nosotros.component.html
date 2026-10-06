@@ -1,53 +1,60 @@
 <section
-  class="bg-brand-primary text-white py-24 px-8 flex flex-col items-center justify-center min-h-[650px] text-center"
+  class="relative bg-brand-primary text-white pt-42 px-24 flex flex-col max-h-[450px] overflow-hidden"
 >
-  <h1 class="font-bold text-5xl md:text-7xl font-titles mb-6">¿Quienes somos?</h1>
-  <p class="text-xl md:text-2xl font-semibold font-body mb-4 max-w-4xl opacity-95">
-    Soluciones de movilidad para las necesidades de tu industria
-  </p>
-  <p class="text-lg md:text-xl font-body mb-20 max-w-3xl opacity-80">
-    Conoce nuestra empresa, nuestra historia y la forma en que trabajamos
-  </p>
+  <div class="z-10">
+    <p class="text-brand-accent-hover font-semibold uppercase tracking-wider mb-4">Nosotros</p>
+    <h1 class="font-bold text-5xl md:text-6xl font-titles mb-6">¿Quienes somos?</h1>
+    <p class="text-xl md:text-2xl font-semibold font-body mb-4 max-w-xl opacity-95">
+      Soluciones de movilidad para las necesidades de tu industria
+    </p>
+    <p class="text-lg md:text-xl font-body mb-12 max-w-lg opacity-80">
+      Conoce nuestra empresa, nuestra historia y la forma en que trabajamos
+    </p>
 
-  <div class="flex flex-col items-center gap-10">
-    <a
-      class="bg-brand-secondary text-brand-primary cursor-pointer px-12 py-4 justify-center items-center rounded-lg font-semibold hover:bg-brand-accent-hover flex text-lg transition-colors font-body"
-    >
-      Conócenos
-    </a>
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-arrow-down text-brand-secondary animate-bounce mt-8"
-    >
-      <path d="M12 5v14" />
-      <path d="m19 12-7 7-7-7" />
-    </svg>
+    <div class="flex flex-col pb-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-down text-brand-secondary animate-bounce"
+      >
+        <path d="M12 5v14" />
+        <path d="m19 12-7 7-7-7" />
+      </svg>
+    </div>
   </div>
+  <div class="absolute inset-y-0 right-0 w-[60%] z-0">
+    <img src="nosotros_hero.png" alt="" class="w-full h-full object-cover" />
+  </div>
+  <div
+    class="absolute inset-y-0 right-0 w-[60%] z-0 bg-linear-to-r from-brand-primary via-brand-primary/60 to-transparent"
+  ></div>
 </section>
 
-<section class="bg-white py-20 px-8 lg:px-24 min-h-[500px]">
-  <h2 class="text-brand-primary text-4xl md:text-5xl font-bold font-titles mb-12 text-center">
-    ¿Quienes somos?
-  </h2>
-
+<section class="bg-white py-12 px-8 lg:px-24 min-h-[400px]">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     <div>
       <img
         src="/Frente_del_local_rodyman.png"
         alt="Frente del local Rodyman"
-        class="w-full max-h-[500px] rounded-2xl object-cover shadow-md"
+        class="w-full rounded-2xl object-cover shadow-md"
       />
     </div>
-    <div class="text-xl text-gray-600 flex flex-col gap-6 opacity-95">
+    <div class="text-xl text-gray-600 flex flex-col gap-5 opacity-95">
+      <div>
+        <p class="text-brand-secondary text-lg font-semibold uppercase tracking-wider mb-2">
+          Quienes somos
+        </p>
+        <h2 class="text-brand-primary text-3xl md:text-4xl font-bold font-titles">
+          Mas que rodachines, somos soluciones de movilidad industrial.
+        </h2>
+      </div>
       <p>
         Somos una empresa especializada en soluciones de movilidad industrial, enfocada en el
         suministro de rodachines, productos relacionados y servicios de mantenimiento para
@@ -67,7 +74,10 @@
   </div>
 </section>
 
-<section class="bg-brand-third py-24 px-8 lg:px-24 min-h-[400px]">
+<section class="bg-brand-third py-12 px-8 lg:px-24 min-h-[400px]">
+  <p class="text-brand-secondary font-semibold uppercase text-lg tracking-wider mb-6">
+    Nuestro proposito
+  </p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <!-- Misión Card -->
     <div
@@ -140,10 +150,24 @@
   </div>
 </section>
 
-<section class="bg-white py-24 px-8 lg:px-24 min-h-[600px] overflow-hidden">
-  <h2 class="text-brand-primary text-4xl md:text-5xl font-bold font-titles mb-20 text-center">
-    Nuestra historia
-  </h2>
+<section class="bg-white py-12 px-8 lg:px-24 min-h-[600px] overflow-hidden">
+  <div class="grid grid-cols-2 mb-16">
+    <div class="pr-8">
+      <p class="text-brand-secondary font-semibold uppercase text-lg tracking-wider mb-2">
+        Nuestra historia
+      </p>
+      <h2 class="text-brand-primary text-4xl md:text-3xl font-bold font-titles max-w-xl">
+        De un pequeño comienzo a soluciones para la industria.
+      </h2>
+    </div>
+    <div class="max-w-xl text-xl text-gray-500 opacity-90 px-16">
+      <p>
+        Nuestra historia esta marcada por el esfuerzo, la pasión y el compromiso con nuestros
+        clientes. Desde un inicio modesto, hemos crecido paso a paso superando desafios y
+        aprendiendo en el camino.
+      </p>
+    </div>
+  </div>
   <div class="relative max-w-5xl mx-auto">
     <!-- Linea central (visible desde sm) -->
     <div
@@ -275,7 +299,7 @@
 </section>
 
 <section
-  class="bg-brand-secondary text-brand-primary py-24 px-8 flex flex-col items-center justify-center min-h-[350px] text-center"
+  class="bg-brand-secondary text-brand-primary py-12 px-8 flex flex-col items-center justify-center min-h-[250px] text-center"
 >
   <h2 class="text-4xl md:text-5xl font-bold font-titles mb-6 max-w-4xl">
     ¿Tienes una necesidad de movilidad?

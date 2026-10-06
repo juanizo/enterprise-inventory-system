@@ -22,5 +22,6 @@ export const routes: Routes = [
   {
     path: 'contactanos',
     component: ContactanosComponent,
+    data: { navbar: 'onLight' },
   },
 ];
