@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-primary: #071a36;
+  --color-brand-secondary: #f5c518;
+  --color-brand-accent-hover: #ffd43b;
+  --color-brand-third: #f8fafc;
+
+  --font-titles: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}

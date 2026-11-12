@@ -1,0 +1,88 @@
+<nav
+  [class.text-white]="variant() === 'onDark'"
+  [class.text-blue-950]="variant() === 'onLight'"
+  class="absolute top-0 left-0 w-full z-50 bg-transparent py-4 px-6 md:px-12 mt-4 flex items-center"
+>
+  <div class="justify-start" [class.hidden]="variant() === 'onLight'">
+    <img src="/Logo_rodyman_main_page.png" alt="" class="w-3xs h-3xs md:w-xs md:h-xs" />
+  </div>
+  <div class="justify-start" [class.hidden]="variant() === 'onDark'">
+    <img src="/Gear_Logo.png" alt="" height="250px" width="250px" />
+  </div>
+
+  <div class="hidden max-w-7xl ml-24 md:flex items-center lg:justify-start font-body">
+    <ul class="flex space-x-6 md:space-x-8 font-semibold text-base md:text-xl">
+      <li>
+        <a
+          routerLink="/inicio"
+          routerLinkActive="text-[#F5C518] !border-[#F5C518]"
+          class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-brand-secondary"
+        >
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/productos"
+          routerLinkActive="text-[#F5C518] !border-[#F5C518]"
+          class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-brand-secondary"
+        >
+          Productos
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/servicios"
+          routerLinkActive="text-[#F5C518] !border-[#F5C518]"
+          class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-[#F5C518]"
+        >
+          Servicios
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/nosotros"
+          routerLinkActive="text-[#F5C518] !border-[#F5C518]"
+          class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-[#F5C518]"
+        >
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/contactanos"
+          routerLinkActive="text-[#F5C518] !border-[#F5C518]"
+          class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-[#F5C518]"
+        >
+          Contactanos
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="absolute right-20 z-50 bg-brand-primary p-10 md:hidden mt-4 space-y-2 border-t pt-2">
+    <a
+      routerLink="/inicio"
+      class="border-b-2 border-transparent pb-1 transition-all duration-300 hover:text-brand-secondary"
+    >
+      Inicio
+    </a>
+    <a
+      routerLink="/productos"
+      class="block pb-1 transition-all duration-300 hover:text-brand-secondary"
+    >
+      Productos
+    </a>
+    <a routerLink="/servicios" class="block pb-1 transition-all duration-300 hover:text-[#F5C518]">
+      Servicios
+    </a>
+    <a routerLink="/nosotros" class="block pb-1 transition-all duration-300 hover:text-[#F5C518]">
+      Nosotros
+    </a>
+    <a
+      routerLink="/contactanos"
+      class="block pb-1 transition-all duration-300 hover:text-[#F5C518]"
+    >
+      Contactanos
+    </a>
+  </div>
+</nav>
